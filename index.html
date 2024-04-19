@@ -1,45 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>SWATHI </h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart-clone</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <header id="top">
+      <div id="navBar">
+        <div id="logo">
+          <img
+            src="https://st1.latestly.com/wp-content/uploads/2024/01/1-2-2-784x441.jpg"
+            id="logo-img"
+          />
+        </div>
+        <div id="search">
+          <div id="search-container">
+            <img src="./images/search.png" id="search-icon" />
+          </div>
+          <input
+            type="text"
+            placeholder="Search for products,brands and more"
+            id="search-bar"
+          />
+        </div>
+        <div id="icon">
+          <div id="profile">
+            <img src="./images/profile.png" style="width: 30%; height: 60%" />
+            <p style="font-size: x-small">Login</p>
+            <img src="./images/drop.png" style="width: 15%; height: 30%" />
+          </div>
+          <div id="cart">
+            <img src="./images/cart-icon.png" style="width: 35%; height: 60%" />
+            <p style="font-size: x-small">Cart</p>
+          </div>
+          <div id="become-a-seller">
+            <img src="./images/shop.png" style="width: 30%; height: 60%" />
+            <p style="font-size: x-small">Become a seller</p>
+          </div>
+          <button id="notify">
+            <img src="./images/dots.png" style="height: 60%; width: 100%" />
+          </button>
+        </div>
+      </div>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a web developer passionate about creating beautiful and functional websites.</p>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills">
-            <h3>Html,Css</h3>
-       
+    <main id="main">
+      <div id="trending-items">
+        <div class="items">
+          <img src="./images/surf.webp" />
+          <p>Grocery</p>
         </div>
-        <div class="skills">
-            <h3>Basics of c,Java,Phython</h3>
-            
+        <div class="items">
+          <img src="./images/mobile.webp" />
+          <p>Mobiles</p>
         </div>
-        <!-- Add more projects here -->
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: swathivenkatesan53@gmail.com</p>
-        <p>Phone: 123-456-7890</p>
-    </section>
+        <div class="items">
+          <img src="./images/fashion.webp" />
+          <p>Fashion</p>
+        </div>
+        <div class="items">
+          <img src="./images/computer.webp" />
+          <p>Electronics</p>
+        </div>
+        <div class="items">
+          <img src="./images/furniture.webp" style="width: 90%" />
+          <p>Home and Furniture</p>
+        </div>
+        <div class="items">
+          <img src="./images/electronics.webp" style="width: 90%" />
+          <p>Appliances</p>
+        </div>
+        <div class="items">
+          <img src="./images/aeroplane.webp" />
+          <p>Travel</p>
+        </div>
+        <div class="items">
+          <img src="./images/toys.webp" style="width: 60%; margin-left: 10px" />
+          <p>Beauty, Travel & More</p>
+        </div>
+        <div class="items">
+          <img src="./images/vehicle.png" style="width: 87%" />
+          <p>Two Wheelers</p>
+        </div>
+      </div>
+      <div id="banner">
+        <img src="./images/banner.webp" />
+      </div>
+      <div id="item-parent">
+        <div class="cards-parent">
+          <h3>Best Electronics</h3>
+          <div class="card-container">
+            <div class="card">
+              <img src="./images/items/camera.jpg" alt="camera" />
+              <h6>Camera</h6>
+              <p>₹368488</p>
+            </div>
+            <div class="card">
+              <img src="./images/items/monitor.jpg" alt="monitor" />
+              <h6>Monitor</h6>
+              <p>₹368488</p>
+            </div>
+            <div class="card">
+              <img src="./images/items/keyboard.jpg" alt="keyboard" />
+              <h6>Keyboard</h6>
+              <p>₹368488</p>
+            </div>
+            <div class="card">
+              <img src="./images/items/microphone.jpg" alt="microphone" />
+              <h6>Microphone</h6>
+              <p>₹368488</p>
+            </div>
+            <div class="card">
+              <img src="./images/items/mobile.jpg" alt="mobile" />
+              <h6>Mobile</h6>
+              <p>₹368488</p>
+            </div>
+            <div class="card">
+              <img src="./images/items/trimmer.jpg" alt="trimmer" />
+              <h6>Trimmer</h6>
+              <p>₹368488</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards-parent">
+          <h3>Beauty, Food, Toys & more</h3>
+          <div class="card-container">
+            <div class="card">
+              <img src="./images/items/cycle.jpg" alt="cycle" />
+              <h6>Cycle</h6>
+              <p>₹368488</p>
+            </div>
+            <div class="card">
+              <img src="./images/items/books.jpg" alt="books" />
+              <h6>Books</h6>
+              <p>₹368488</p>
+            </div>
+            <div class="card">
+              <img src="./images/items/honey.jpg" alt="honey" />
+              <h6>Honey</h6>
+              <p>₹368488</p>
+            </div>
+            <div class="card">
+              <img src="./images/items/dryFruits.jpg" alt="dryfruits" />
+              <h6>Dry Fruits</h6>
+              <p>₹368488</p>
+            </div>
+            <div class="card">
+              <img src="./images/items/pencil.jpg" alt*="pencil" />
+              <h6>Stationary</h6>
+              <p>₹368488</p>
+            </div>
+            <div class="card">
+              <img src="./images/items/toys.jpg" alt="toys" />
+              <h6>Toys</h6>
+              <p>₹368488</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards-parent">
+          <h3>Trending Fashion</h3>
+          <div class="card-container">
+            <div class="card">
+              <img src="./images/items/saree.jpg" alt="saree" />
+              <h6>Saree</h6>
+              <p>₹368488</p>
+            </div>
+            <div class="card">
+              <img src="./images/items/kurti.jpg" alt="kurti" />
+              <h6>Kurti</h6>
+              <p>₹368488</p>
+            </div>
+            <div class="card">
+              <img src="./images/items/lehenga.jpg" alt="lehenga" />
+              <h6>Lehenga</h6>
+              <p>₹368488</p>
+            </div>
+            <div class="card">
+              <img src="./images/items/shirt.jpg" alt="shirt" />
+              <h6>Shirt</h6>
+              <p>₹368488</p>
+            </div>
+            <div class="card">
+              <img src="./images/items/t-shirt.jpg" alt="t-shirt" />
+              <h6>T-shirt</h6>
+              <p>₹368488</p>
+            </div>
+            <div class="card">
+              <img src="./images/items/sunglass.jpg" alt="sunglass" />
+              <h6>Sunglasses</h6>
+              <p>₹368488</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer>
-        <p>&copy;All rights reserved.</p>
+      <div id="upper-container">
+        <div id="left-part">
+          <div id="about">
+            <p>ABOUT</p>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Flipkart Stories</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Corporate Information</a></li>
+            </ul>
+          </div>
+          <div id="companies">
+            <p>GROUP COMPANIES</p>
+            <ul>
+              <li><a href="#">Myntra</a></li>
+              <li><a href="#">Flipkart Wholesale</a></li>
+              <li><a href="#">Clear Trip</a></li>
+              <li><a href="#">shopsy</a></li>
+            </ul>
+          </div>
+          <div id="help">
+            <p>HELP</p>
+            <ul>
+              <li><a href="#">payments</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">cancellations and returns</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">report Infingement</a></li>
+            </ul>
+          </div>
+          <div id="consumer">
+            <p>CONSUMER POLICY</p>
+            <ul>
+              <li><a href="#">cancellations & returns</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">site map</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="right-part">
+          <div id="right-first-part">
+            <div id="upper-division">
+              <p id="mail">Mail Us:</p>
+              <p id="mail-address">
+                Cecilia Chapman<br />
+                711-2880 Nulla St.<br />
+                Mankato Mississippi 96522<br />
+                (257) 563-7401<br />
+                Iris Watson
+              </p>
+            </div>
+            <div id="lower-division">
+              <p>Social</p>
+              <div id="icons">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyLjkzMzEgMjFDMTcuOTAzNyAyMSAyMS45MzMxIDE2Ljk3MDYgMjEuOTMzMSAxMkMyMS45MzMxIDcuMDI5NDQgMTcuOTAzNyAzIDEyLjkzMzEgM0M3Ljk2MjU0IDMgMy45MzMxMSA3LjAyOTQ0IDMuOTMzMTEgMTJDMy45MzMxMSAxNi45NzA2IDcuOTYyNTQgMjEgMTIuOTMzMSAyMVoiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTE2LjY4MzEgOC4yNUgxNS4xODMxQzE0LjU4NjQgOC4yNSAxNC4wMTQxIDguNDg3MDUgMTMuNTkyMSA4LjkwOTAxQzEzLjE3MDIgOS4zMzA5NyAxMi45MzMxIDkuOTAzMjYgMTIuOTMzMSAxMC41VjIxIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik05LjkzMzExIDEzLjVIMTUuOTMzMSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K"
+                />
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzE4M18yMCkiPgo8cGF0aCBkPSJNMTMuNTQzNiAxMC42MTc5TDIwLjA5NzEgM0gxOC41NDQxTDEyLjg1MzcgOS42MTQ0OEw4LjMwODg3IDNIMy4wNjY4OUw5LjkzOTY0IDEzLjAwMjNMMy4wNjY4OSAyMC45OTA4SDQuNjE5OTRMMTAuNjI5MSAxNC4wMDU2TDE1LjQyODggMjAuOTkwOEgyMC42NzA4TDEzLjU0MzIgMTAuNjE3OUgxMy41NDM2Wk0xMS40MTY1IDEzLjA5MDRMMTAuNzIwMiAxMi4wOTQ0TDUuMTc5NTMgNC4xNjkxMUg3LjU2NDkxTDEyLjAzNjMgMTAuNTY1MUwxMi43MzI2IDExLjU2MTFMMTguNTQ0OCAxOS44NzQ4SDE2LjE1OTVMMTEuNDE2NSAxMy4wOTA4VjEzLjA5MDRaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzE4M18yMCI+CjxyZWN0IHg9IjMuMDY2ODkiIHk9IjMiIHdpZHRoPSIxNy42MDM5IiBoZWlnaHQ9IjE4IiByeD0iMC4yIiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo="
+                />
+                <img
+                  src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/YoutubeLogo-8425c4.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div id="right-second-part">
+            <p id="office-head">Registered Office Address</p>
+            <p id="head-address">Cecilia Chapman<br>
+              711-2880 Nulla St.<br>
+              Mankato Mississippi 96522<br>
+              (257) 563-7401<br>
+              Iris Watson</p>
+          </div>
+        </div>
+      </div>
+      <div id="bottom-container">
+        <div>
+          <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/sell-image-9de8ef.svg"/>
+          <p>Become a seller</p>
+        </div>
+        <div>
+          <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/sell-image-9de8ef.svg"/>
+          <p>Advertise</p>
+        </div>
+        <div>
+          <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/sell-image-9de8ef.svg"/>
+          <p>Gift Cards</p>
+        </div>
+        <div>
+          <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/help-centre-image-c4ace8.svg"/>
+          <p>Help Center</p>
+        </div>
+        <div>
+          <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg"/>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
